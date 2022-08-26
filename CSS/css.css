@@ -237,3 +237,10 @@ div .container {
   right: 300px;
 }
 }
+
+
+
+hr.new5 {
+  border: 10px solid gray;
+  border-radius: 1px;
+}

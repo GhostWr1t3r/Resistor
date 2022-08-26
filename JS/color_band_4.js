@@ -100,7 +100,7 @@ let color4_4 = function () {
 b_4_c_4.addEventListener('click', color4_4);
 
 let ans_4 = function () {
-    final_ans_4 = ((color1_value_4 + '') + (color2_value_4 + '')) + '×' + ((Math.pow(10, color3_value_4)) + '') + 'Ω' +'+'+ ((color4_value_4 + '')) + '%';
+    final_ans_4 = ((color1_value_4 + '') + (color2_value_4 + '')) + '×' + ((Math.pow(10, color3_value_4)) + '') + ' Ω' +'+'+ ((color4_value_4 + '')) + '%';
     output.value = final_ans_4;
 }
 
