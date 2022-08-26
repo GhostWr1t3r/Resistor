@@ -147,7 +147,6 @@ div .container {
 
 
 .resistor_color {
-  height: calc(550px - 150px);
   width: 884px;
   display: flex;
   justify-content: center;
@@ -200,25 +199,28 @@ div .container {
 
 @media only screen and (max-width: 600px){
 .resister_box {  
-  height: 600px;
   width: 600px;
 }
 }
 @media only screen and (max-width: 500px){
 .resister_box {  
-  height: 500px;
   width: 500px;
 }
 }
 @media only screen and (max-width: 400px){
 .resister_box {  
-  height: 400px;
   width: 400px;
+}
+.main_container {
+  width: 400px;
+}
+.resistor_color {
+  position: relative;
+  right: 250px;
 }
 }
 @media only screen and (max-width: 300px){
 .resister_box {  
-  height: 300px;
-  width: 00px;
+  width: 300px;
 }
 }
