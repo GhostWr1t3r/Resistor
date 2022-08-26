@@ -201,10 +201,19 @@ div .container {
 .resister_box {  
   width: 600px;
 }
+.resistor_color {
+  position: relative;
+  right: 250px;
+  
+}
 }
 @media only screen and (max-width: 500px){
 .resister_box {  
   width: 500px;
+}
+.resistor_color {
+  position: relative;
+  right: 250px;
 }
 }
 @media only screen and (max-width: 400px){
@@ -222,5 +231,9 @@ div .container {
 @media only screen and (max-width: 300px){
 .resister_box {  
   width: 300px;
+}
+.resistor_color {
+  position: relative;
+  right: 250px;
 }
 }
