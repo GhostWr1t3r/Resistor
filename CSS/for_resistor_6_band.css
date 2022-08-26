@@ -18,6 +18,8 @@
   align-items: center;
   margin: -2px 3px;
   justify-content: center;
+  position: relative;
+  right: 50px;
 }
 
 .select_color_6 {
