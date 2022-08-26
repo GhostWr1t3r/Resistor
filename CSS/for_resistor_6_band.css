@@ -12,13 +12,12 @@
 
 .color_band_6 {
   height: 160px;
-  width: 50px;
+  width: 40px;
   border: 2px solid black;
   display: flex;
   align-items: center;
   margin: -2px 3px;
   justify-content: center;
-  position: relative;
 }
 
 .select_color_6 {
