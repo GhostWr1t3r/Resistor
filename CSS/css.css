@@ -242,5 +242,17 @@ div .container {
 
 hr.new5 {
   border: 10px solid gray;
-  border-radius: 1px;
+  border-radius: 0px;
+}
+
+
+
+.title-head {
+  background: red;
+  color: wheat;
+  font-size: 2em;
+  font-family: monospace;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
