@@ -224,6 +224,15 @@ div .container {
   margin: -2px 3px;
   justify-content: center;
 }
+.color_band_5 {
+  height: 160px;
+  width: 40px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  margin: -2px 3px;
+  justify-content: center;
+}
 }
 @media only screen and (max-width: 400px){
 .resister_box {  
