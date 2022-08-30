@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="winter">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel = "icon" href = 
+"braces-line.png" 
+        type = "image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/home.css">
+      <!-- CSS file link -->
+      <link rel="stylesheet" href="./CSS/css.css">
+      <link rel="stylesheet" href="./CSS/color_selector.css">
+      <link rel="stylesheet" href="./CSS/display_none.css">
+      <link rel="stylesheet" href="./CSS/for_resistor_4_band.css">
+      <link rel="stylesheet" href="./CSS/for_resistor_5_band.css">
+      <link rel="stylesheet" href="./CSS/for_resistor_6_band.css">
+      <link rel="stylesheet" href="./CSS/selector_hover.css">
+      <link rel="stylesheet" href="./CSS/btn_hover.css">
+      <link rel="stylesheet" href="./CSS/toggle.css">
+  
+
+  <!-- DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.22.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Resistor</title>
+</head>
+
+<body>
+  <section id="search-section">
+    <a href="#">
+      <!-- <img src="res/logo.png" alt="logo" class="logo"> -->
+    </a>
+    <div class="navbar bg-base-100 shadow-xl">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="https://github.com/RCHAMEXE"><i class="uil uil-github-alt"></i>Github</a></li>
+            <li><a href="https://facebook.com/3LIIX1"><i class="uil uil-facebook-f"></i>Facebook</a></li>
+            <li><a href="mailto:alircham1@gmail.com"><i class="uil uil-envelopes"></i>Gmail</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center">
+        <a class="btn btn-ghost normal-case text-xl">RESISTOR CODE COLOR</a>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <i class="fa-solid fa-swatchbook"></i>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              <li class="theme-item" theme-data="lemonade">
+                <a>
+                  <i class="fa-solid fa-sun"></i>
+                  Light
+                </a>
+              </li>
+              <li class="theme-item" theme-data="halloween">
+                <a>
+                  <i class="fa-solid fa-moon"></i>
+                  Dark
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home">
+
+    <main class="main_container ">
+      <div class="resister_box ">
+
+          <div class="btn_section ">
+              
+              <select id="numberOfBands" class="selection ">
+                  <option value="None">Select Bands</option>
+                  <option value="4">4 Bands</option>
+                  <option value="5">5 Bands</option>
+                  <option value="6">6 Bands</option>
+              </select>
+              <button class="btn_change ">
+                  Apply
+              </button>
+              <button class="btn_restart ">
+                  Restart
+              </button>
+          </div>
+
+
+          <div class="resistor_color">
+              
+              <div id="main_box_4" class="main_box_4  display_none">
+                  
+
+                  <div class="color_1 color_band_4">
+                      <select name="band_4_color_1" id="band_4_color_1" class="select_color_4 ">
+                          <option value="None" class="none" selected>color-1</option>
+                          <option value="0" class="black">black</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="2" class="red">red</option>
+                          <option value="3" class="orange">orange</option>
+                          <option value="4" class="yellow">yellow</option>
+                          <option value="5" class="green">green</option>
+                          <option value="6" class="blue">blue</option>
+                          <option value="7" class="violet">violet</option>
+                          <option value="8" class="grey">grey</option>
+                          <option value="9" class="white">white</option>
+                      </select>
+                  </div>
+                  <div class="color_2 color_band_4">
+                      <select name="band_4_color_2" id="band_4_color_2" class="select_color_4 ">
+                          <option value="None" class="none" selected>color-2</option>
+                          <option value="0" class="black">black</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="2" class="red">red</option>
+                          <option value="3" class="orange">orange</option>
+                          <option value="4" class="yellow">yellow</option>
+                          <option value="5" class="green">green</option>
+                          <option value="6" class="blue">blue</option>
+                          <option value="7" class="violet">violet</option>
+                          <option value="8" class="grey">grey</option>
+                          <option value="9" class="white">white</option>
+                      </select>
+                  </div>
+                  <div class="color_3 color_band_4">
+                      <select name="band_4_color_3" id="band_4_color_3" class="select_color_4 ">
+                          <option value="None" class="none" selected>color-3</option>
+                          <option value="0" class="black">black</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="2" class="red">red</option>
+                          <option value="3" class="orange">orange</option>
+                          <option value="4" class="yellow">yellow</option>
+                          <option value="5" class="green">green</option>
+                          <option value="6" class="blue">blue</option>
+                          <option value="7" class="violet">violet</option>
+                          <option value="8" class="grey">grey</option>
+                          <option value="9" class="white">white</option>
+                          <option value="-1" class="gold">gold</option>
+                          <option value="-2" class="silver">silver</option>
+                      </select>
+                  </div>
+                  <div class="color_4 color_band_4" id="tolerance">
+                      <select name="band_4_color_4" id="band_4_color_4" class="select_color_4 ">
+                          <option value="None" class="none" selected>Tolerance</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="2" class="red">red</option>
+                          <option value="0.5" class="green">green</option>
+                          <option value="0.25" class="blue">blue</option>
+                          <option value="0.1" class="violet">violet</option>
+                          <option value="0.05" class="grey">grey</option>
+                          <option value="5" class="gold">gold</option>
+                          <option value="10" class="silver">silver</option>
+                      </select>
+                  </div>
+
+              </div>
+
+              <div id="main_box_5" class="main_box_5  display_none">
+                  
+
+                  <div class="color_1 color_band_5">
+                      <select name="band_5_color_1" id="band_5_color_1" class="select_color_5 ">
+                          <option value="None" class="none" selected>color-1</option>
+                          <option value="0" class="black">black</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="2" class="red">red</option>
+                          <option value="3" class="orange">orange</option>
+                          <option value="4" class="yellow">yellow</option>
+                          <option value="5" class="green">green</option>
+                          <option value="6" class="blue">blue</option>
+                          <option value="7" class="violet">violet</option>
+                          <option value="8" class="grey">grey</option>
+                          <option value="9" class="white">white</option>
+                      </select>
+                  </div>
+                  <div class="color_2 color_band_5">
+                      <select name="band_5_color_2" id="band_5_color_2" class="select_color_5 ">
+                          <option value="None" class="none" selected>color-2</option>
+                          <option value="0" class="black">black</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="2" class="red">red</option>
+                          <option value="3" class="orange">orange</option>
+                          <option value="4" class="yellow">yellow</option>
+                          <option value="5" class="green">green</option>
+                          <option value="6" class="blue">blue</option>
+                          <option value="7" class="violet">violet</option>
+                          <option value="8" class="grey">grey</option>
+                          <option value="9" class="white">white</option>
+                      </select>
+                  </div>
+                  <div class="color_3 color_band_5">
+                      <select name="band_5_color_3" id="band_5_color_3" class="select_color_5 ">
+                          <option value="None" class="none" selected>color-3</option>
+                          <option value="0" class="black">black</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="2" class="red">red</option>
+                          <option value="3" class="orange">orange</option>
+                          <option value="4" class="yellow">yellow</option>
+                          <option value="5" class="green">green</option>
+                          <option value="6" class="blue">blue</option>
+                          <option value="7" class="violet">violet</option>
+                          <option value="8" class="grey">grey</option>
+                          <option value="9" class="white">white</option>
+                      </select>
+                  </div>
+                  <div class="color_4 color_band_5">
+                      <select name="band_5_color_4" id="band_5_color_4" class="select_color_5 ">
+                          <option value="None" class="none" selected>color-4</option>
+                          <option value="0" class="black">black</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="2" class="red">red</option>
+                          <option value="3" class="orange">orange</option>
+                          <option value="4" class="yellow">yellow</option>
+                          <option value="5" class="green">green</option>
+                          <option value="6" class="blue">blue</option>
+                          <option value="7" class="violet">violet</option>
+                          <option value="8" class="grey">grey</option>
+                          <option value="9" class="white">white</option>
+                          <option value="-1" class="gold">gold</option>
+                      </select>
+                  </div>
+                  <div class="color_5 color_band_5" id="tolerance">
+                      <select name="band_5_color_5" id="band_5_color_5" class="select_color_5 ">
+                          <option value="None" class="none" selected>Tolerance</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="0.5" class="green">green</option>
+                          <option value="0.25" class="blue">blue</option>
+                          <option value="0.1" class="violet">violet</option>
+                      </select>
+                  </div>
+
+              </div>
+
+              <div id="main_box_6" class="main_box_6  display_none">
+
+                  <div class="color_1 color_band_6">
+                      <select name="band_6_color_1" id="band_6_color_1" class="select_color_6 ">
+                          <option value="None" class="none" selected>color-1</option>
+                          <option value="0" class="black">black</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="2" class="red">red</option>
+                          <option value="3" class="orange">orange</option>
+                          <option value="4" class="yellow">yellow</option>
+                          <option value="5" class="green">green</option>
+                          <option value="6" class="blue">blue</option>
+                          <option value="7" class="violet">violet</option>
+                          <option value="8" class="grey">grey</option>
+                          <option value="9" class="white">white</option>
+                      </select>
+                  </div>
+                  <div class="color_2 color_band_6">
+                      <select name="band_6_color_2" id="band_6_color_2" class="select_color_6 ">
+                          <option value="None" class="none" selected>color-2</option>
+                          <option value="0" class="black">black</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="2" class="red">red</option>
+                          <option value="3" class="orange">orange</option>
+                          <option value="4" class="yellow">yellow</option>
+                          <option value="5" class="green">green</option>
+                          <option value="6" class="blue">blue</option>
+                          <option value="7" class="violet">violet</option>
+                          <option value="8" class="grey">grey</option>
+                          <option value="9" class="white">white</option>
+                      </select>
+                  </div>
+                  <div class="color_3 color_band_6">
+                      <select name="band_6_color_3" id="band_6_color_3" class="select_color_6 ">
+                          <option value="None" class="none" selected>color-3</option>
+                          <option value="0" class="black">black</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="2" class="red">red</option>
+                          <option value="3" class="orange">orange</option>
+                          <option value="4" class="yellow">yellow</option>
+                          <option value="5" class="green">green</option>
+                          <option value="6" class="blue">blue</option>
+                          <option value="7" class="violet">violet</option>
+                          <option value="8" class="grey">grey</option>
+                          <option value="9" class="white">white</option>
+                      </select>
+                  </div>
+                  <div class="color_4 color_band_6">
+                      <select name="band_6_color_4" id="band_6_color_4" class="select_color_6 ">
+                          <option value="None" class="none" selected>color-4</option>
+                          <option value="0" class="black">black</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="2" class="red">red</option>
+                          <option value="3" class="orange">orange</option>
+                          <option value="4" class="yellow">yellow</option>
+                          <option value="5" class="green">green</option>
+                          <option value="6" class="blue">blue</option>
+                          <option value="7" class="violet">violet</option>
+                          <option value="8" class="grey">grey</option>
+                          <option value="9" class="white">white</option>
+                          <option value="1" class="gold">gold</option>
+                          <option value="2" class="silver">silver</option>
+                      </select>
+                  </div>
+                  <div class="color_5 color_band_6">
+                      <select name="band_6_color_5" id="band_6_color_5" class="select_color_6 ">
+                          <option value="None" class="none" selected>color-5</option>
+                          <option value="1" class="brown">brown</option>
+                          <option value="2" class="red">red</option>
+                          <option value="3" class="orange">orange</option>
+                          <option value="4" class="yellow">yellow</option>
+                          <option value="0.5" class="green">green</option>
+                          <option value="0.25" class="blue">blue</option>
+                          <option value="0.1" class="violet">violet</option>
+                          <option value="0.05" class="grey">grey</option>
+                          <option value="5" class="gold">gold</option>
+                          <option value="10" class="silver">silver</option>
+                      </select>
+                  </div>
+                  <div class="color_6 color_band_6" id="tolerance">
+                      <select name="band_6_color_2" id="band_6_color_6" class="select_color_6 ">
+                          <option value="None" class="none" selected>Tolerance</option>
+                          <option value="100" class="brown">brown</option>
+                          <option value="50" class="red">red</option>
+                          <option value="15" class="orange">orange</option>
+                          <option value="25" class="yellow">yellow</option>
+                          <option value="10" class="blue">blue</option>
+                          <option value="5" class="violet">violet</option>
+                      </select>
+                  </div>
+
+              </div>
+
+
+              
+          </div>
+          
+
+          <div class="calculate_output">
+              <button id="btn-calc" class="btn_calulate_4  display_none">
+                  Calulate
+              </button>
+              <button id="btn-calc" class="btn_calulate_5  display_none">
+                  Calulate
+              </button>
+              <button id="btn-calc" class="btn_calulate_6  display_none">
+                  Calulate
+              </button>
+              <input type="text" class="output_section display_none " readonly="readonly">
+          </div>
+      </div>
+  </main>
+  
+</div>
+<h3 class="title-head">WEBSITE CREATOR : ALI RCHAM 
+  <br> WEBSITE IDEA : EL AYACHI RAHALI
+</h3>
+
+</body>
+<script src="JS/app.js"></script>
+<!-- Java scrtipt file link -->
+<script src="./JS/select_option.js"></script>
+<script src="./JS/restart_btn.js"></script>
+<script src="./JS/color_band_4.js"></script>
+<script src="./JS/color_band_5.js"></script>
+<script src="./JS/color_band_6.js"></script>
+
+</html>

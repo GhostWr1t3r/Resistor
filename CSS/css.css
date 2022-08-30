@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Fredoka+One&family=Hubballi&family=Staatliches&display=swap");
+
+
+
+
+
+
+.main_container {
+  height: calc(100em - 53.45em);
+  display: flex;
+}
+
+
+
+.resister_box {
+  background: transparent;
+  margin: auto;
+  height: 400px;
+  width: 600px;
+}
+
+
+.btn_section {
+  padding: 10px;
+}
+
+.selection {
+  border-style: none;
+  font-size: 1.5em;
+  margin: 4px 2px;
+  user-select: none;
+  cursor: pointer;
+  padding: 15px 104px;
+  background-color: var(--color-dark-5);
+  color: black;
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+
+
+.btn_restart {
+  background-color: var(--color-dark-5);
+  border: none;
+  color: var(--text-dark);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: monospace;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  float: right;
+  border-radius: 6px;
+}
+
+
+
+.btn_change {
+  background-color: var(--color-dark-5);
+  border: none;
+  color: var(--text-dark);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+
+
+.resistor_color {
+  width: 884px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.calculate_output {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 450px;
+  float: left;
+  font-family: monospace;
+}
+
+#btn-calc {
+  background-color: var(--color-dark-5);
+  border: none;
+  color: var(--text-dark);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 6px;
+}
+
+html {
+    right: 0;
+}
+
+.output_section {
+  border-style: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  user-select: none;
+  cursor: pointer;
+  padding: 15px 10px;
+  width: 400px;
+  background-color: var(--color-dark-5);
+  color: var(--text-dark);
+  border-radius: 6px;
+  color: var(--color-dark-1);
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 600px){
+.resister_box {  
+  width: 400px;
+}
+.main_container {
+  width: 300px;
+}
+.resistor_color {
+    position: relative;
+    right: 150px;
+  }
+  .selection {
+    position: relative;
+    right: 50px;
+  }
+  .btn_change  {
+    position: relative;
+    right: 50px;
+  }
+  .btn_restart {
+    position: relative;
+    right: 70px;
+  }
+  html {
+    right: 0;
+  }
+
+}
+@media only screen and (max-width: 500px){
+    .resister_box {  
+        width: 400px;
+      }
+      .main_container {
+        width: 300px;
+      }
+      .resistor_color {
+          position: relative;
+          right: 150px;
+        }
+        .selection {
+          position: relative;
+          right: 50px;
+        }
+        .btn_change  {
+          position: relative;
+          right: 50px;
+        }
+        .btn_restart {
+          position: relative;
+          right: 70px;
+        }
+        html {
+          right: 0;
+        }
+}
+@media only screen and (max-width: 400px){
+.resister_box {  
+  width: 400px;
+}
+.main_container {
+  width: 300px;
+}
+.resistor_color {
+    position: relative;
+    right: 150px;
+  }
+  .selection {
+    position: relative;
+    right: 50px;
+  }
+  .btn_change  {
+    position: relative;
+    right: 50px;
+  }
+  .btn_restart {
+    position: relative;
+    right: 70px;
+  }
+  html {
+    right: 0;
+  }
+  .output_section {
+    position : relative;
+    top: 80px;
+    right:150px;
+  }
+  
+
+}
+@media only screen and (max-width: 300px){
+    .resister_box {  
+        width: 400px;
+      }
+      .main_container {
+        width: 300px;
+      }
+      .resistor_color {
+          position: relative;
+          right: 150px;
+        }
+        .selection {
+          position: relative;
+          right: 50px;
+        }
+        .btn_change  {
+          position: relative;
+          right: 50px;
+        }
+        .btn_restart {
+          position: relative;
+          right: 70px;
+        }
+        html {
+          right: 0;
+        }
+}
+
+
+
+hr.new5 {
+  border: 10px solid gray;
+  border-radius: 0px;
+}
+
+
+
+.title-head {
+  background: red;
+  color: wheat;
+  font-size: 2em;
+  font-family: monospace;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+
+  .title-head {
+    position:relative;
+    color: black;
+    background: transparent;
+    top: 50px;
+  }

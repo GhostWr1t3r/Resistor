@@ -1,0 +1,36 @@
+.main_box_5{
+    border: 3x solid black;
+    border-radius: 10px;
+    width: 380px;
+    background-color: beige;
+    -webkit-box-shadow: 0 0 20px rgb(7, 7, 7);
+    box-shadow: 0 0 20px rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 150px;
+}
+
+.color_band_5{
+    height: 160px;
+    width: 50px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    margin: -2px 3px;
+    justify-content: center;
+    position: relative;
+    right: 50px;
+}
+
+.select_color_5{
+    -webkit-appearance: none;
+    background-color: rgb(99, 99, 99);
+    border-style: none;
+    height: 160px;
+    width: 50px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
